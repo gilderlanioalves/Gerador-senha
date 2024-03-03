@@ -13,19 +13,22 @@
     <img class="logo" src="img/logo.png" alt="Gerador de Senha" />
 
     <main class="container-input">
-        <span>Tamanho <span id="valor-tamanho"></span> caracteres</span>
+        <span>Tamanho: <span id="valor-tamanho"></span> caracteres</span>
         <input type="range" id="slider" class="slider" min="6" max="25" value="8"/> 
 
-        <button id="button-crt" class="button-crt" >Gerar Senha </button>
+        <button id="button-crt" class="button-crt" onclick="generationPass()">Gerar Senha </button>
 
     </main>
 
     <div id="container-password" class="container-password hide">
         <span class="title-password">Sua Senha Foi Gerada: </span>
-        <span id="password" class="password">senha gerada aqui</span>
+        <span id="password" class="password" onclick="copyClickPass()"></span>
         <span class="tooltip" >Clique na senha para copiar 👆</span>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+<!--@gilderlanio_alves--> 
+    
